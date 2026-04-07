@@ -1,0 +1,12 @@
+# Track A 运行时依赖
+# 在我们的开发机上验证过的版本 (Python 3.11, conda env "gemma4")
+# 接手人不需要严格相同版本——下面给出建议下限
+# CPU-only 推理就够，不需要 CUDA
+
+torch>=2.0          # 实测 2.10.0+cu128
+transformers>=4.40  # 实测 5.5.0
+scikit-learn>=1.3   # 实测 1.8.0
+huggingface_hub>=0.20  # 实测 1.9.0；用于下载 NLI 模型
+
+# 可选 (加速 HF 下载)
+hf_transfer>=0.1

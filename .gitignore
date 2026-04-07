@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Virtual envs
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Local model cache (these can be huge; should NOT be committed)
+hf_cache/
+local-erlangshen-*/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Local secrets / tokens (defense in depth)
+.env
+.env.local
+*.token
+secrets/
+
+# Temp results not meant for the repo
+results/_*.json
+results/*.tmp
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
